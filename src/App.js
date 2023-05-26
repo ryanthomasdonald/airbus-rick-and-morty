@@ -1,43 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import TopLogo from "./components/TopLogo.js"
-import NavButtons from "./components/NavButtons.js"
+import Body from "./components/Body.js"
+import Footer from "./components/Footer.js"
 import './App.css';
 
 function App() {
 
-    const [cards, setCards] = useState([]);
-    const [info, setInfo] = useState([]);
-
-    useEffect(() => {
-        fetch('https://rickandmortyapi.com/api/character?page=1')
-            .then((response) => response.json())
-            .then((data) => {
-                console.log(data);
-                setCards(data.results);
-                setInfo(data.info.pages);
-            })
-            .catch((err) => {
-                console.log(err.message);
-            });
-    }, []);
-
     return (
         <div>
             <TopLogo />
-            <NavButtons />
-            <div>
-                {info}
-            </div>
-            <div>
-                {cards.map((card) => {
-                    return (
-                        <div key={card.id}>
-                            {card.name}
-                            <img src={card.image} alt="avatar" />
-                        </div>
-                    );
-                })};
-            </div>
+            <Body />
+            <Footer />
             {/* <div className="card">
                 <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" className="card-img-top" alt="Fissure in Sandstone"/>
                 <div className="card-body">
