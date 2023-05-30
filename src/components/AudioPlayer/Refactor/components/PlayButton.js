@@ -1,4 +1,5 @@
 import React from "react";
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 export default function PlayButton({ audioPlayerRef, progressBarRef, animationRef, fileObjURLInState, setIsPlaying, setDuration, setCurrentTime }) {
 
@@ -26,6 +27,6 @@ export default function PlayButton({ audioPlayerRef, progressBarRef, animationRe
     };
 
     return (
-        <button sx={{ color: "#FFFFFF", opacity: "60%", fontSize: "36px" }} onClick={playAudio} />
+        <PlayArrowIcon sx={{ color: "#005555", opacity: "100%", fontSize: "36px" }} className="playButton" onClick={playAudio} />
     );
 };

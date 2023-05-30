@@ -4,12 +4,13 @@ import PauseButton from "./components/PauseButton";
 import ProgressBar from "./components/ProgressBar";
 import TimeCounter from "./components/TimeCounter";
 import VolumeButton from "./components/VolumeButton";
+import GCD from "./Grand_Canyon_Day.wav";
 import "./AudioPlayer.css";
 
 export default function AudioPlayer() {
 
     const [rawFileInState, setRawFileInState] = useState(null); // can be removed, just here to test how the raw data stores in state
-    const [fileObjURLInState, setFileObjURLInState] = useState(null);
+    const [fileObjURLInState, setFileObjURLInState] = useState(GCD);
     const [isPlaying, setIsPlaying] = useState(false);
     const [duration, setDuration] = useState(0);
     const [currentTime, setCurrentTime] = useState(0);

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CharCard from "./CharCard.js"
 import LocaCard from "./LocaCard.js"
-import EpisCard from "./CharCard.js"
+import EpisCard from "./EpisCard.js"
 import "./Body.css";
 
 function Body() {
@@ -21,41 +21,46 @@ function Body() {
         fetch(`https://rickandmortyapi.com/api/${category}?page=${displayPage}`)
             .then((response) => response.json())
             .then((data) => {
-                // console.log(data);
                 setApiResArr(data.results);
                 setPageMax(data.info.pages);
+
+                if (category === "character") {
+                    setIsCharacters(true);
+                    setIsLocations(false);
+                    setIsEpisodes(false);
+                }
+                else if (category === "location") {
+                    setIsCharacters(false);
+                    setIsLocations(true);
+                    setIsEpisodes(false);
+                }
+                else {
+                    setIsCharacters(false);
+                    setIsLocations(false);
+                    setIsEpisodes(true);
+                }
             })
             .catch((err) => {
                 console.log(err.message);
             });
-            
     }, [category, displayPage]);
 
     function navToCharacters(e) {
         e.preventDefault();
-        setCategory("character");
-        setIsCharacters(true);
-        setIsLocations(false);
-        setIsEpisodes(false);
         setDisplayPage(characterPage);
+        setCategory("character");
     };
 
     function navToLocations(e) {
         e.preventDefault();
-        setCategory("location");
-        setIsCharacters(false);
-        setIsLocations(true);
-        setIsEpisodes(false);
         setDisplayPage(locationPage);
+        setCategory("location");
     };
 
     function navToEpisodes(e) {
         e.preventDefault();
-        setCategory("episode");
-        setIsCharacters(false);
-        setIsLocations(false);
-        setIsEpisodes(true);
         setDisplayPage(episodePage);
+        setCategory("episode");
     };
 
     function pageUp(e) {
@@ -100,25 +105,31 @@ function Body() {
         };
     };
 
-    // console.log(characterPage);
-    // console.log(locationPage);
-    // console.log(episodePage);
-    // console.log(displayPage);
-
     return (
         <div>
-            {/* top nav buttons */}
+            {/* category buttons */}
             <div className="text-center">
-                <button type="button" className="btn topNavButton btn-lg" onClick={e => navToCharacters(e)}>
+                <button type="button" className="btn topCatButton btn-lg" onClick={e => navToCharacters(e)}>
                     CHARACTERS
                 </button>
-                <button type="button" className="btn topNavButton btn-lg" onClick={e => navToLocations(e)}>
+                <button type="button" className="btn topCatButton btn-lg" onClick={e => navToLocations(e)}>
                     LOCATIONS
                 </button>
-                <button type="button" className="btn topNavButton btn-lg" onClick={e => navToEpisodes(e)}>
+                <button type="button" className="btn topCatButton btn-lg" onClick={e => navToEpisodes(e)}>
                     EPISODES
                 </button>
             </div>
+
+            {/* top prev/next */}
+            <div className="text-center">
+                <button type="button" className="btn topNavButton btn-lg" onClick={e => pageDown(e)}>
+                    PREV
+                </button>
+                <button type="button" className="btn topNavButton btn-lg" onClick={e => pageUp(e)}>
+                    NEXT
+                </button>
+            </div>
+
             {/* cards */}
             <div>
                 {isCharacters
@@ -141,7 +152,8 @@ function Body() {
                 :
                 null}
             </div>
-            {/* bottom nav buttons */}
+
+            {/* bottom prev/next */}
             <div className="text-center">
                 <button type="button" className="btn bottomNavButton btn-lg" onClick={e => pageDown(e)}>
                     PREV
@@ -149,9 +161,6 @@ function Body() {
                 <button type="button" className="btn bottomNavButton btn-lg" onClick={e => pageUp(e)}>
                     NEXT
                 </button>
-            </div>
-            <div className="margin: 100">
-
             </div>
         </div>
     )

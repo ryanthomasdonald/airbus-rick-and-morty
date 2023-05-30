@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 
 export default function PauseButton({ audioPlayerRef, volumeBarRef }) {
 
@@ -16,10 +17,9 @@ export default function PauseButton({ audioPlayerRef, volumeBarRef }) {
 
     return (
         <>
-            <button sx={{ color: "#FFFFFF", opacity: "60%", fontSize: "32px" }} onClick={handleVolumeDisplay} />
             {volumeDisplay === false
-                ? null
-                : <input type="range" style={{width: "50px"}} min="0" max="1" step=".01" value={volumeLevel} ref={volumeBarRef} onChange={changeVolume} />
+                ? <VolumeUpIcon sx={{ color: "#005555", opacity: "100%", fontSize: "32px" }} className="volButton" onClick={handleVolumeDisplay} />
+                : <input type="range" style={{width: "50px"}} min="0" max="1" step=".01" value={volumeLevel} ref={volumeBarRef} onChange={changeVolume} onTouchEnd={handleVolumeDisplay} onMouseUp={handleVolumeDisplay} />
             }
         </>
     );
