@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Rick-And-Morty-API-Logo](https://github.com/ryanthomasdonald/airbus-rick-and-morty/assets/88894158/0b75030d-d550-4d39-95fd-bbf01a632997)
 
 ## Available Scripts
 
