@@ -10,9 +10,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
+
+You will need to run this command after cloning the repo in order to install all of the app's dependencies on your local machine.
+
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This will run the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 Or for a quick look, simply visit [https://rick-and-morty-api-exercise.netlify.app/](https://rick-and-morty-api-exercise.netlify.app/)!
+
+Thanks for checking this out!
