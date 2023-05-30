@@ -102,7 +102,7 @@ function CharCard(apiResArr) {
                         </div>
                     </div>
                 );
-            })}
+            })};
         </div>
     );
 };

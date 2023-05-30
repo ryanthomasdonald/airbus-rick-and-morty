@@ -22,7 +22,6 @@
 }
 
 .charImg {
-    /* position: relative; */
     margin: -10px 0px 0px -10px;
     width: 200px;
     border-radius: 10px;
@@ -94,16 +93,12 @@
     background-color: #00353e;
     color: #ffffff;
     width: 650px;
-    /* height: 205px; */
     margin: 15px;
     border-radius: 10px;
     filter: drop-shadow(0px 0px 5px #002126);
 }
 
 .locaInfoCard {
-    /* position: absolute; */
-    /* position: fixed;
-    bottom: 0; */
     background-color: #005555;
     color: white;
     margin: 0px 0px 0px 0px;
@@ -117,10 +112,19 @@
     background-color: #00353e;
     color: #ffffff;
     width: 650px;
-    /* height: 205px; */
     margin: 15px;
     border-radius: 10px;
     filter: drop-shadow(0px 0px 5px #002126);
+}
+
+.episInfoCard {
+    background-color: #005555;
+    color: white;
+    margin: 0px 0px 0px 0px;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 @media screen and (max-width: 675px) {
@@ -139,7 +143,7 @@
     }
 
     .charCardName {
-        margin: -125px 15px 15px 158px;
+        margin: -122px 15px 15px 158px;
     }
 
     .locaCard {

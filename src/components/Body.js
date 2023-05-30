@@ -68,7 +68,7 @@ function Body() {
 
         if (displayPage >= pageMax) {
             return
-        }
+        };
 
         if (category === "character") {
             setCharacterPage(characterPage + 1);
@@ -163,7 +163,7 @@ function Body() {
                 </button>
             </div>
         </div>
-    )
+    );
 };
 
 export default Body;

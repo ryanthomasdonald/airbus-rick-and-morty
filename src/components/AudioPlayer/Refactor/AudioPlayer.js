@@ -4,13 +4,14 @@ import PauseButton from "./components/PauseButton";
 import ProgressBar from "./components/ProgressBar";
 import TimeCounter from "./components/TimeCounter";
 import VolumeButton from "./components/VolumeButton";
-import GCD from "./Grand_Canyon_Day.wav";
+import GoodbyeMoonmen from "./RMGoodbye.mp3";
 import "./AudioPlayer.css";
 
 export default function AudioPlayer() {
 
-    const [rawFileInState, setRawFileInState] = useState(null); // can be removed, just here to test how the raw data stores in state
-    const [fileObjURLInState, setFileObjURLInState] = useState(GCD);
+    // const [rawFileInState, setRawFileInState] = useState(null); // can be removed, just here to test how the raw data stores in state
+    // eslint-disable-next-line
+    const [fileObjURLInState, setFileObjURLInState] = useState(GoodbyeMoonmen);
     const [isPlaying, setIsPlaying] = useState(false);
     const [duration, setDuration] = useState(0);
     const [currentTime, setCurrentTime] = useState(0);
@@ -33,19 +34,18 @@ export default function AudioPlayer() {
         progressBarRef.current.style.setProperty("background-size", `${progressBarRef.current.value / duration * 100}%`);
     }, [currentTime, duration]);
 
-    const handleFileInputChange = (e) => {
-        if (e.target.files[0] != null) {
-            audioPlayerRef.current.pause();
-            audioPlayerRef.current.currentTime = 0;
-            // console.log("Raw File", e.target.files[0]);
-            let fileObjURL = window.URL.createObjectURL(e.target.files[0]); // This line is where the audio file/data needs to hit so it can be passed to temporary browser memory
-            setIsPlaying(false);
-            setRawFileInState(e.target.files[0]); // can be removed, just here to test how the raw data stores in state
-            setFileObjURLInState(fileObjURL);
-        } else {
-            return null;
-        };
-    };
+    // const handleFileInputChange = (e) => {
+    //     if (e.target.files[0] != null) {
+    //         audioPlayerRef.current.pause();
+    //         audioPlayerRef.current.currentTime = 0;
+    //         let fileObjURL = window.URL.createObjectURL(e.target.files[0]); // This line is where the audio file/data needs to hit so it can be passed to temporary browser memory
+    //         setIsPlaying(false);
+    //         // setRawFileInState(e.target.files[0]); // can be removed, just here to test how the raw data stores in state
+    //         setFileObjURLInState(fileObjURL);
+    //     } else {
+    //         return null;
+    //     };
+    // };
 
     return (
         <>

@@ -34,7 +34,7 @@ function EpisCard(apiResArr) {
 
                 return (
                     <div key={card.id} className="episCard row g-0">
-                        <div className="locaInfoCard">
+                        <div className="episInfoCard">
                             <div className="charSpecText">
                                 <span style={{color: "lightgray"}}>
                                     Type:&nbsp;
