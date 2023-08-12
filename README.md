@@ -18,6 +18,6 @@ You will need to run this command after cloning the repo in order to install all
 
 This will run the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Or for a quick look, simply visit [https://rick-and-morty-api-exercise.netlify.app/](https://rick-and-morty-api-exercise.netlify.app/)!
+Or for a quick look, simply visit [https://rick-and-morty-api-exercise.netlify.app/](https://rick-and-morty-ab-exercise.netlify.app/)!
 
 Thanks for stopping by!
