@@ -3,158 +3,152 @@
     lime green #b2df28; */
 
 @font-face {
-    font-family: getSchwifty;
-    src: url(/public/assets/get_schwifty.ttf);
+  font-family: getSchwifty;
+  src: url(/public/assets/get_schwifty.ttf);
 }
 
 @font-face {
-    font-family: eurostileReg;
-    src: url(/public/assets/Eurostile_Extended_2_Regular.otf);
+  font-family: eurostileReg;
+  src: url(/public/assets/Eurostile_Extended_2_Regular.otf);
 }
 
 .charCard {
-    background-color: #00353e;
-    color: #ffffff;
-    width: 650px;
-    margin: 15px;
-    border-radius: 10px;
-    filter: drop-shadow(0px 0px 5px #002126);
+  background-color: #00353e;
+  color: #ffffff;
+  width: 650px;
+  margin: 15px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 5px #002126);
 }
 
 .charImg {
-    margin: -10px 0px 0px -10px;
-    width: 200px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #00252c;
+  margin: -10px 0px 0px -10px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #00252c;
 }
 
 .cardName {
-    font-family: getSchwifty;
-    color: #00b5cc;
-    -webkit-text-stroke: 1px #00353e;
-    text-shadow:
-        -1px -1px 0 #b2df28,  
-        1px -1px 0 #b2df28,
-        -1px 1px 0 #b2df28,
-        1px 1px 0 #b2df28;
-    margin: 22px 15px 15px 15px;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  font-family: getSchwifty;
+  color: #00b5cc;
+  -webkit-text-stroke: 1px #00353e;
+  text-shadow: -1px -1px 0 #b2df28, 1px -1px 0 #b2df28, -1px 1px 0 #b2df28,
+    1px 1px 0 #b2df28;
+  margin: 22px 15px 15px 15px;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 .charCardName {
-    font-family: getSchwifty;
-    color: #00b5cc;
-    -webkit-text-stroke: 1px #00353e;
-    text-shadow:
-        -1px -1px 0 #b2df28,  
-        1px -1px 0 #b2df28,
-        -1px 1px 0 #b2df28,
-        1px 1px 0 #b2df28;
-    margin: 22px 15px 15px 15px;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  font-family: getSchwifty;
+  color: #00b5cc;
+  -webkit-text-stroke: 1px #00353e;
+  text-shadow: -1px -1px 0 #b2df28, 1px -1px 0 #b2df28, -1px 1px 0 #b2df28,
+    1px 1px 0 #b2df28;
+  margin: 22px 15px 15px 15px;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 .charInfoCard {
-    position: absolute;
-    background-color: #005555;
-    color: white;
-    margin: -176px 0px 0px 208px;
-    height: 176px;
-    width: 428px;
-    border-radius: 10px;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  position: absolute;
+  background-color: #005555;
+  color: white;
+  margin: -176px 0px 0px 208px;
+  height: 176px;
+  width: 428px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 .charSpecText {
-    font-family: eurostileReg;
-    font-size: 15px;
-    margin: 8px 8px 8px 14px;
+  font-family: eurostileReg;
+  font-size: 15px;
+  margin: 8px 8px 8px 14px;
 }
 
 .charStatText {
-    font-family: eurostileReg;
-    font-size: 15px;
-    margin: 8px 8px 8px 14px;
+  font-family: eurostileReg;
+  font-size: 15px;
+  margin: 8px 8px 8px 14px;
 }
 
 .charOrigText {
-    font-family: eurostileReg;
-    font-size: 15px;
-    margin: 8px 8px 8px 14px;
+  font-family: eurostileReg;
+  font-size: 15px;
+  margin: 8px 8px 8px 14px;
 }
 
 .charLocaText {
-    font-family: eurostileReg;
-    font-size: 15px;
-    margin: 8px 8px 8px 14px;
+  font-family: eurostileReg;
+  font-size: 15px;
+  margin: 8px 8px 8px 14px;
 }
 
 .locaCard {
-    background-color: #00353e;
-    color: #ffffff;
-    width: 650px;
-    margin: 15px;
-    border-radius: 10px;
-    filter: drop-shadow(0px 0px 5px #002126);
+  background-color: #00353e;
+  color: #ffffff;
+  width: 650px;
+  margin: 15px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 5px #002126);
 }
 
 .locaInfoCard {
-    background-color: #005555;
-    color: white;
-    margin: 0px 0px 0px 0px;
-    height: 100px;
-    width: 100%;
-    border-radius: 10px;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  background-color: #005555;
+  color: white;
+  margin: 0px 0px 0px 0px;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 .episCard {
-    background-color: #00353e;
-    color: #ffffff;
-    width: 650px;
-    margin: 15px;
-    border-radius: 10px;
-    filter: drop-shadow(0px 0px 5px #002126);
+  background-color: #00353e;
+  color: #ffffff;
+  width: 650px;
+  margin: 15px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 5px #002126);
 }
 
 .episInfoCard {
-    background-color: #005555;
-    color: white;
-    margin: 0px 0px 0px 0px;
-    height: 100px;
-    width: 100%;
-    border-radius: 10px;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  background-color: #005555;
+  color: white;
+  margin: 0px 0px 0px 0px;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 @media screen and (max-width: 675px) {
-    .charCard {
-        width: 95%;
-        height: 325px;
-    }
+  .charCard {
+    width: 95%;
+    height: 325px;
+  }
 
-    .charImg {
-        width: 150px;
-    }
+  .charImg {
+    width: 150px;
+  }
 
-    .charInfoCard {
-        width: 100%;
-        margin: 10px 0px 0px 0px;
-    }
+  .charInfoCard {
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+  }
 
-    .charCardName {
-        margin: -122px 15px 15px 158px;
-    }
+  .charCardName {
+    margin: -122px 15px 15px 158px;
+  }
 
-    .locaCard {
-        width: 95%;
-    }
+  .locaCard {
+    width: 95%;
+  }
 
-    .locaInfoCard {
-        height: 120px;
-    }
+  .locaInfoCard {
+    height: 120px;
+  }
 
-    .episCard {
-        width: 95%;
-    }
+  .episCard {
+    width: 95%;
+  }
 }

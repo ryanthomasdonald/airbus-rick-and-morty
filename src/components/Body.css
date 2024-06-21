@@ -1,119 +1,119 @@
 .topCatButton {
-    font-family: eurostileReg;
-    margin: 10px 10px 26px 10px;
-    background-color: #005555;
-    color: white;
-    border: 2px solid #00353e;
-    outline: 5px solid #00353e;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  font-family: eurostileReg;
+  margin: 10px 10px 26px 10px;
+  background-color: #005555;
+  color: white;
+  border: 2px solid #00353e;
+  outline: 5px solid #00353e;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 .topCatButton:hover {
-    font-family: eurostileReg;
-    margin: 10px 10px 26px 10px;
-    background-color: #00b5cc;
-    color: #ffffff;
-    border: 2px solid #00353e;
-    outline: 5px solid #b2df28;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  font-family: eurostileReg;
+  margin: 10px 10px 26px 10px;
+  background-color: #00b5cc;
+  color: #ffffff;
+  border: 2px solid #00353e;
+  outline: 5px solid #b2df28;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 .topCatButton:not(:disabled):not(.disabled):focus {
-    font-family: eurostileReg;
-    margin: 10px 10px 26px 10px;
-    background-color: #005555;
-    color: #ffffff;
-    border: 2px solid #00353e;
-    outline: 5px solid #b2df28;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  font-family: eurostileReg;
+  margin: 10px 10px 26px 10px;
+  background-color: #005555;
+  color: #ffffff;
+  border: 2px solid #00353e;
+  outline: 5px solid #b2df28;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 .topCatButton:not(:disabled):not(.disabled):active {
-    font-family: eurostileReg;
-    margin: 10px 10px 26px 10px;
-    background-color: #00b5cc;
-    color: #00353e;
-    border: 2px solid #00353e;
-    outline: 5px solid #b2df28;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  font-family: eurostileReg;
+  margin: 10px 10px 26px 10px;
+  background-color: #00b5cc;
+  color: #00353e;
+  border: 2px solid #00353e;
+  outline: 5px solid #b2df28;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 .topNavButton {
-    font-family: eurostileReg;
-    margin: 0px 10px 30px 10px;
-    background-color: #005555;
-    color: white;
-    border: 2px solid #00353e;
-    outline: 5px solid #00353e;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  font-family: eurostileReg;
+  margin: 0px 10px 30px 10px;
+  background-color: #005555;
+  color: white;
+  border: 2px solid #00353e;
+  outline: 5px solid #00353e;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 .topNavButton:hover {
-    font-family: eurostileReg;
-    margin: 0px 10px 30px 10px;
-    background-color: #00b5cc;
-    color: #ffffff;
-    border: 2px solid #00353e;
-    outline: 5px solid #b2df28;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  font-family: eurostileReg;
+  margin: 0px 10px 30px 10px;
+  background-color: #00b5cc;
+  color: #ffffff;
+  border: 2px solid #00353e;
+  outline: 5px solid #b2df28;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 .topNavButton:not(:disabled):not(.disabled):focus {
-    font-family: eurostileReg;
-    margin: 0px 10px 30px 10px;
-    background-color: #005555;
-    color: #ffffff;
-    border: 2px solid #00353e;
-    outline: 5px solid #b2df28;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  font-family: eurostileReg;
+  margin: 0px 10px 30px 10px;
+  background-color: #005555;
+  color: #ffffff;
+  border: 2px solid #00353e;
+  outline: 5px solid #b2df28;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 .topNavButton:not(:disabled):not(.disabled):active {
-    font-family: eurostileReg;
-    margin: 0px 10px 30px 10px;
-    background-color: #00b5cc;
-    color: #00353e;
-    border: 2px solid #00353e;
-    outline: 5px solid #b2df28;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  font-family: eurostileReg;
+  margin: 0px 10px 30px 10px;
+  background-color: #00b5cc;
+  color: #00353e;
+  border: 2px solid #00353e;
+  outline: 5px solid #b2df28;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 .bottomNavButton {
-    font-family: eurostileReg;
-    margin: 10px 10px 110px 10px;
-    background-color: #005555;
-    color: white;
-    border: 2px solid #00353e;
-    outline: 5px solid #00353e;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  font-family: eurostileReg;
+  margin: 10px 10px 110px 10px;
+  background-color: #005555;
+  color: white;
+  border: 2px solid #00353e;
+  outline: 5px solid #00353e;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 .bottomNavButton:hover {
-    font-family: eurostileReg;
-    margin: 10px 10px 110px 10px;
-    background-color: #00b5cc;
-    color: #ffffff;
-    border: 2px solid #00353e;
-    outline: 5px solid #b2df28;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  font-family: eurostileReg;
+  margin: 10px 10px 110px 10px;
+  background-color: #00b5cc;
+  color: #ffffff;
+  border: 2px solid #00353e;
+  outline: 5px solid #b2df28;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 .bottomNavButton:not(:disabled):not(.disabled):focus {
-    font-family: eurostileReg;
-    margin: 10px 10px 110px 10px;
-    background-color: #005555;
-    color: #ffffff;
-    border: 2px solid #00353e;
-    outline: 5px solid #b2df28;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  font-family: eurostileReg;
+  margin: 10px 10px 110px 10px;
+  background-color: #005555;
+  color: #ffffff;
+  border: 2px solid #00353e;
+  outline: 5px solid #b2df28;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
 
 .bottomNavButton:not(:disabled):not(.disabled):active {
-    font-family: eurostileReg;
-    margin: 10px 10px 110px 10px;
-    background-color: #00b5cc;
-    color: #00353e;
-    border: 2px solid #00353e;
-    outline: 5px solid #b2df28;
-    filter: drop-shadow(0px 0px 5px #00252c);
+  font-family: eurostileReg;
+  margin: 10px 10px 110px 10px;
+  background-color: #00b5cc;
+  color: #00353e;
+  border: 2px solid #00353e;
+  outline: 5px solid #b2df28;
+  filter: drop-shadow(0px 0px 5px #00252c);
 }
