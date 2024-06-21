@@ -114,7 +114,7 @@ function Body() {
           className="btn topCatButton btn-lg"
           onClick={(e) => navToLocations(e)}
         >
-          LOCATIONSedsarf
+          LOCATIONS
         </button>
         <button
           type="button"
